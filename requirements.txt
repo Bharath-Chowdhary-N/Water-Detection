@@ -37,7 +37,7 @@ Markdown==3.3.4
 MarkupSafe==1.1.1
 matplotlib==3.3.4
 mkl-fft==1.0.6
-mkl-random==1.1.1
+mkl-random==1.0.1.1
 mkl-service==2.3.0
 multidict==5.1.0
 networkx==2.5
