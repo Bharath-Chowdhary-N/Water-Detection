@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+   <meta http-equiv="Pragma" content="no-cache">
+   <meta http-equiv="Expires" content="0">
+   <!link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+   <link rel="stylesheet" href="static/style.css?v=1">
+   <body style="background-color:white;">
+   <script src="{{ url_for('static',filename='javascript.js') }}"></script>
+
+
+      <center><p style="font-size:80px;font-family:'Roboto',sans-serif;color:black"><b>Water Detection</b></p></center>
+      <center><p style="font-size:20px;font-family:'Roboto',sans-serif;color:black">Please upload an image of your choice</p></center>
+      <center><h2 style="font-size:20px;font-family:'Roboto',sans-serif;color:black">For Example: providing input as an image like in left results in model prediction as shown in right</h2> </center>
+
+      <!div class="crop">
+      <!img  src="{{ url_for('static',filename='image_18.jpg') }}" />
+      <!img  src="{{ url_for('static',filename='test_img.png') }}" />
+      <!/div>
+
+    <!link class="jsbin" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+    <meta charset=utf-8 />
+    <title>Water Detection</title>
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <style>
+    article, aside, figure, footer, header, hgroup, 
+    menu, nav, section { display: block; }
+    </style>
+
+    
+      
+      <div class="image123">
+          <div class="image-container">
+              <img class="image-prop1" src="{{ url_for('static',filename='image_18.jpg') }}" />
+              <span class="caption1"> &emsp; A landsat satellite image</span>
+          </div>
+          
+          <div class="image-container">
+              <img class="image-prop2" src="{{ url_for('static',filename='test_img.png') }}" />
+              <span class="caption2">Our Water-Segmenation model predicting land as white-area and water as black area.</span>
+          </div>
+
+      </div>
+    <div class="image-container">
+      <img class="image-prop3" id="alp1" src="{{ url_for('static',filename='blank-img.jpg') }}"/>
+    </div>  
+
+    
+    <form action="/handle-form" method="POST" enctype="multipart/form-data">  
+     <!div class="form-group"> 
+      <!div class="">
+          <input class="btn" type="file" name="image" id="image">    
+      <!/div>
+     <!/div>
+      <button type="submit" class="btn">Click Here to view model result </button>
+    </form>
+
+    <!---  
+    <form action="/handle-form" method="POST" enctype="multipart/form-data">
+
+      <div class="form-group">
+        <label>Select image</label>
+        <div class="custom-file">
+          <input type="file" class="custom-file-input" name="image" id="image">
+          <label class="custom-file-label" for="image">Select image...</label>
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Upload</button>
+
+    </form>
+    -->
+     <!----
+      <div class="image-upload">
+        <label for="file-input">
+          <img class="click-upload" id="alp1" src="{{ url_for('static',filename='upload_your_image_here.jpg') }}"/>
+          
+        </label>
+      
+        <input id="file-input" type="file" onchange="readURL(this);">
+        <!img id="demo" />
+      </div>
+
+      <div class="jv-image" id="header"></div>
+      
+      <!input type='file' onchange="readURL(this);" />
+      <!img id="blah" src="#" alt="your image" />
+    -->
+      
+      
+
+
+
+
+   </body>
+</head>
+</html>
