@@ -20,7 +20,9 @@ app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
 cache.init_app(app)
 #model = pickle.load(open('random_forest_regression_model.pkl', 'rb'))
 
-app.config["IMAGE_UPLOADS"] = "/home/p302793/Dropbox/P302793/Private/Code/lndsat/static"
+#app.config["IMAGE_UPLOADS"] = "/home/p302793/Dropbox/P302793/Private/Code/lndsat/static"
+app.config["IMAGE_UPLOADS"] = app.root_path
+
 @app.route('/')
 def Home():
     app.config["CACHE_TYPE"] = "null"
@@ -55,7 +57,7 @@ def handle_form():
           #image_r=image.read()
           #display_image(image_r)
           #image.filename="user_iploaded_image.jpg"
-          image.save(os.path.join(app.config["IMAGE_UPLOADS"], "user_uploaded_image.jpg"))
+          image.save(os.path.join(app.config["IMAGE_UPLOADS"],"static" ,"user_uploaded_image.jpg"))
           display_image(image.filename)
           print(" success")
     #file = request.files.get('image-file','')
