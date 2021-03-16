@@ -6,13 +6,9 @@ import pickle
 import numpy as np
 import sklearn
 import os
-import cv2
-import io
 from PIL import Image
 import matplotlib.pyplot as plt
 from main import *
-from sklearn.preprocessing import StandardScaler
-
 from flask_caching import Cache
 
 
