@@ -1,0 +1,139 @@
+body{width: 1280px; height: 960px}
+
+.image-container {
+   float:left;
+   text-align: center;
+   
+}
+.image-container2 {
+   text-align: center;
+   
+}
+.image-prop1 {
+   height:300px;
+   width:300px;
+   padding-left: 17em; 
+   padding-right: 6em;
+}
+.image-prop2 {
+   height:300px;
+   width:300px;
+   padding-left: 2em; 
+   padding-right: 3em;
+}
+
+.image-prop4 {
+   height: 380px;
+   width:550px;
+   padding-left: 43em; 
+   padding-right: 30em;
+   top:-325px;
+   position: relative;
+}
+.image-prop3 {
+   height: 300px;
+   width:300px;
+   padding-left: 17em; 
+   padding-right: 0em;
+   top:40px;
+   position: relative;
+}
+
+
+.jv-image {
+   height: 300px;
+   width:300px;
+   padding-left: 0em; 
+   padding-right: 3em;
+   position: relative;
+   top: -304px;
+   left: -495px;
+}
+
+.click_upload {
+   height:20px;
+   width:20px;
+   padding-left: 17em; 
+   padding-right: 3em;
+}
+
+
+.caption1 {
+   display: block;
+   padding-left: 8em;
+   font-family:'Roboto',sans-serif;
+}
+
+.caption2 {
+   display: block;
+   width=300px;
+   font-family:'Roboto',sans-serif;
+   
+
+}
+
+.caption3 {
+   position:relative;
+   top:80px;
+   left:100px;
+   display: block;
+   width=300px;
+   font-family:'Roboto',sans-serif;
+   
+
+}
+
+.caption4 {
+   position: relative;
+   top:-325px;
+   padding-left:660px;
+   display: block;
+   width=300px;
+   font-family:'Roboto',sans-serif;
+   
+
+}
+
+.image-upload>input {
+   display: none;
+}
+.image-upload img{
+   height:300px;
+   width:300px;
+   padding-left: 17em; 
+   padding-right: 6em;
+ }
+
+
+ .upload-btn-wrapper {
+   position: relative;
+   padding-left: 17em;
+   padding-top:2em;
+   color: azure;
+   top:-250px;
+   left: -80px;
+   overflow: hidden;
+   display: inline-block;
+ }
+ 
+ .btn {
+   border: 2px solid rgb(86, 88, 187);
+   color: rgb(15, 15, 15);
+   background-color: rgb(182, 226, 165);
+   padding: 8px 20px;
+   border-radius: 8px;
+   font-size: 20px;
+   font-weight: bold;
+   position: relative;
+   top:60px;
+   left:120px;
+ }
+ 
+ .upload-btn-wrapper input[type=file] {
+   font-size: 100px;
+   position: absolute;
+   color: azure;
+   left: 0;
+   top: 0;
+   opacity: 0;
+ }
