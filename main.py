@@ -87,8 +87,8 @@ class landsat():
         # outputs_r=np.round(outputs)
         self.model_unet = Model(inputs=self.input_image, outputs=[outputs])
         #self.model_unet.compile(optimizer='adam', loss=self.custom_loss, metrics=[self.dice_loss])
-        self.model_unet.compile(optimizer='adam', loss=tf.keras.losses.BinaryCrossentropy(), metrics=tf.keras.metrics.BinaryCrossentropy())
-
+        #self.model_unet.compile(optimizer='adam', loss=tf.keras.losses.BinaryCrossentropy(), metrics=tf.keras.metrics.BinaryCrossentropy())
+        #alpha
         return self
 
     def dice_coeff(self,y_true, y_pred):
